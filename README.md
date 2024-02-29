@@ -2,6 +2,20 @@
 
         This is a simple chat application implemented in Java, consisting of a server (Server.java) and a client (Client.java). 
         The application allows communication between clients by sending messages through the server.
+# Description
+
+        The client prompts the user to enter their name, the recipient's name, and then initiates a connection to the server.
+        It establishes communication with the server, allowing the user to send and receive messages.
+
+        Messages are sent in the format from,to,message where:
+
+                        from: Sender's name
+                        to: Recipient's name
+                        message: The actual message
+The client runs two threads:
+
+        The main thread continuously reads user input and sends messages to the server.
+        Another thread continuously listens for incoming messages from the server and prints them.
 
 # Socket Class
 
